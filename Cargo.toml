@@ -1,0 +1,18 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.6"
+tokio = { version = "1.48.0" , features = ["full"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+uuid = { version = "1.18.1"  , features = ["v4"] }
+diesel = { version = "2.3.3", features = ["sqlite", "chrono", "uuid"] }
+dotenvy = "0.15.7"
+chrono = "0.4.42"
+argon2 = "0.6.0-rc.1"
+jsonwebtoken = {version="10.1.0", features=["rust_crypto"]}
+thiserror = "2.0.17"
+tower-http = { version = "0.6.6" , features = ["cors"] }
