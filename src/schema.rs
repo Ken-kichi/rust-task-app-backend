@@ -2,7 +2,7 @@
 
 diesel::table! {
     tasks (id) {
-        id -> Nullable<Integer>,
+        id -> Integer,
         user_id -> Integer,
         title -> Text,
         description -> Nullable<Text>,
@@ -15,7 +15,7 @@ diesel::table! {
 
 diesel::table! {
     users (id) {
-        id -> Nullable<Integer>,
+        id -> Integer,
         name -> Text,
         email -> Text,
         password_hash -> Text,
